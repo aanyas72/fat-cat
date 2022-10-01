@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MyWorld2
+comment0.text=\r\n\ The\ second\ level\ in\ the\ game\!\r\n\r\n\ @author\ Aanya\ and\ Najia\r\n\ \r\n
+comment1.params=
+comment1.target=MyWorld2()
+comment1.text=\r\n\ Constructor\ for\ the\ second\ level\:\r\n\ Add\ tiles\ and\ characters,\ then\ build\ the\ world.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ buildWorld()
+comment3.text=\r\n\ Build\ the\ second\ level\ -\ \r\n\ create\ the\ ground,\ add\ the\ lava,\ and\ add\ candy\ for\ the\ cat\ to\ collect.\r\n
+numComments=4

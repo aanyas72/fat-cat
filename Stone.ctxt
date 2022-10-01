@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Stone
+comment0.text=\r\n\ One\ of\ the\ hazards\ the\ cat\ has\ to\ face\!\r\n\r\n\ @author\ Aanya\ and\ Najia\r\n
+comment1.params=
+comment1.target=Stone()
+comment1.text=\r\n\ Set\ the\ image\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Decrease\ the\ \r\n
+numComments=3

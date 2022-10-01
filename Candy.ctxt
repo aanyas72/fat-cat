@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Candy
+comment0.text=\r\n\ An\ object\ that\ the\ cat\ can\ pick\ up\ during\ the\ game.\ \r\n\ The\ more\ it\ collects,\ the\ more\ points\ it\ gets.\r\n\r\n\ @author\ Aanya\ and\ Najia\r\n\ \r\n
+comment1.params=
+comment1.target=Candy()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

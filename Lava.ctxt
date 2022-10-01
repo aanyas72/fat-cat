@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Lava
+comment0.text=\r\n\ A\ hazard\ for\ the\ cat\!\ Don't\ touch\ it,\ or\ else\ you'll\ lose\ a\ life\!\r\n\r\n\ @author\ Aanya\ and\ Najia\r\n
+comment1.params=world
+comment1.target=Lava(int)
+comment1.text=\r\n\ Lava\ constructor.\r\n\ Set\ the\ image\ and\ the\ size.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ method\ for\ the\ lava\!\ \r\n\ If\ it\ touches\ the\ cat,\ the\ cat\ loses\ a\ life\ and\ gets\ set\ to\ its\ original\ position.\r\n
+numComments=3
