@@ -41,7 +41,7 @@ public class Cat extends MovableAnimatedActor
         idleLeft = new Animation(50000000, idleImgs);
         idleLeft.scale(100, 87);
         idleLeft.mirrorHorizontally();
-        idleLeft.setBounds(18, 5, 54, 80);
+        idleLeft.setBounds(28, 5, 54, 80);
         
         walkRight = new Animation(50000000, walkImgs);
         walkRight.scale(100, 87);
@@ -99,7 +99,8 @@ public class Cat extends MovableAnimatedActor
         super.act();
         
         if (health == 0) {
-            // set world to game over
+            GameOverScreen w = new GameOverScreen();
+            Mayflower.setWorld(w);
         }
     }
     

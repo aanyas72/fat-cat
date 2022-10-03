@@ -3,15 +3,21 @@ import mayflower.*;
 /**
  * Write a description of class GravityObjectActor here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aanya and Najia
  */
 public class GravityObjectActor extends Actor
 {
+    private double speed;
 
     public void act() {
-        setLocation(getX(), getY() + 1);
+        setLocation(getX(), getY() + getSpeed());
     }
-
     
+    public double getSpeed() {
+        return speed;
+    }
+    
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
 }

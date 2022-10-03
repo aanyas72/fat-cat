@@ -5,5 +5,13 @@ public class Block extends Actor {
         setImage("img/Tiles/2.png");
     }
     
-    public void act() {}
+    public void act() {
+        if (isTouching(Candy.class)) {
+            Object a = getOneIntersectingObject(Candy.class);
+            Candy c = (Candy) a;
+            int col = c.getCol();
+            
+            
+        }
+    }
 }

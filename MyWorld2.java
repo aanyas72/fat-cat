@@ -26,7 +26,7 @@ public class MyWorld2 extends World
         addObject(cat, 50, 375);
         
         buildWorld();
-        showText("Score: " + cat.getScore() + " Lives: " + cat.getHealth(), 10, 30, Color.BLACK);
+        showText("Score: " + cat.getScore() + " Health: " + cat.getHealth(), 10, 30, Color.BLACK);
     }
     
     public void act()

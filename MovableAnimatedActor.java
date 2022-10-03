@@ -40,9 +40,6 @@ public class MovableAnimatedActor extends AnimatedActor {
             setLocation(x + 1, y);
             newAction = "walkRight";
             direction = "right";
-            //if (isTouching(Block.class)) {
-             //   setLocation(x-1, y);
-           // }
         } else if (isTouching(Ladder.class) && (Mayflower.isKeyDown(Keyboard.KEY_UP))) {
             newAction = "walkRight";
             direction = "right";
@@ -50,19 +47,6 @@ public class MovableAnimatedActor extends AnimatedActor {
             setLocation(x - 1, y);
             newAction = "walkLeft";
             direction = "left";
-            //if (isTouching(Block.class)) {
-               // setLocation(x+1,y);
-           // }
-            // } else if (Mayflower.isKeyDown(Keyboard.KEY_DOWN) && (y + 1 + h <= 600)) {
-            // setLocation(x, y + 1);
-            // if (isTouching(Block.class)) {
-            // setLocation(x, y - 1);
-            // }
-            // } else if (Mayflower.isKeyDown(Keyboard.KEY_UP) && (y - 1 >= 0)) {
-            // setLocation(x, y - 1);
-            // if (isTouching(Block.class)) {                
-            // setLocation(x, y + 1);
-            // }
         } else {
             if (direction != null && direction.equals("left")) {
                 newAction = "idleLeft";
@@ -71,14 +55,19 @@ public class MovableAnimatedActor extends AnimatedActor {
             }
         }
         
-        if (Mayflower.isKeyDown(Keyboard.KEY_UP) && !isClimbing()) {
+        if (Mayflower.isKeyDown(Keyboard.KEY_UP)) {
             //if (super.isBlocked()) {
                 setLocation(x, y - 5);
             //}
         }
 
-        if (direction != null && isFalling() && direction.equals("right")) newAction = "fallRight";
-        if (direction != null && isFalling() && direction.equals("left")) newAction = "fallLeft";
+        if (direction != null && isFalling() && direction.equals("right")) {
+            newAction = "fallRight";
+        }
+        
+        if (direction != null && isFalling() && direction.equals("left")) {
+            newAction = "fallLeft";
+        }
 
         if (newAction != null && !newAction.equals(currentAction)) {
             if (newAction.equals("walkRight")) {
@@ -129,5 +118,6 @@ public class MovableAnimatedActor extends AnimatedActor {
         falling = a;
     }
 
-    public void setFallRightAnimation(Animation a) { fallingRight = a; }
+    public void setFallRightAnimation(Animation a) { 
+        fallingRight = a; }
 }

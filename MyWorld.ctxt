@@ -1,9 +1,12 @@
 #BlueJ class context
 comment0.target=MyWorld
+comment0.text=\n\ The\ first\ level\ in\ the\ game\!\n\n\ @author\ Aanya\ and\ Najia\n\ \n
 comment1.params=
 comment1.target=MyWorld()
+comment1.text=\n\ Constructor\ for\ the\ first\ level\:\n\ Add\ tiles\ and\ characters,\ then\ build\ the\ world.\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\n\ Act\ method\ for\ the\ first\ level.\n\ Randomly\ generate\ candy\ and\ rocks\ that\ will\ float\ down\ into\ the\ world.\n\ They\ will\ not\ intersect\ and\ their\ speeds\ will\ vary.\n
 comment3.params=
 comment3.target=void\ buildWorld()
 numComments=4
